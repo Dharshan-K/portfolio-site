@@ -1,0 +1,37 @@
+body{
+	background-image: url("./assets/backgroundImg.jpg");
+	background-repeat: no-repeat;
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+}
+
+#nav-title{
+	font-size: 25px;
+	}
+.row{
+	background-color: grey;
+	
+}
+
+.fa-4x{
+	padding: 5px;
+	color:black;
+	
+}
+
+#logo{
+	width: 40px;
+	height:40px;
+	border-radius: 60px;
+	margin-right: 5px;
+	margin:10px;
+	
+	
+}
+.vector{
+	width:400px;
+	height:400px;
+	overflow: scroll;
+}
+
