@@ -1,22 +1,49 @@
 body{
-	background-image: url("./assets/backgroundImg.jpg");
-	background-repeat: no-repeat;
+	/* background-image: url("./assets/backgroundImg.jpg");
+	background-repeat: no-repeat; */
 	max-width: 100%;
 	max-height: 100%;
 	display: block;
 }
+.padding{
+	
+	margin: 0px 0px 0px 0px;
+	
+	
+	
+	margin-right: 10px;
+}
+
+#particles-js {
+	background: black;
+	height: 100vh;
+}
+
+
+.intro{
+width: 80%;
+	height: 80%;
+	display: block;
+		margin-left: auto;
+		margin-right: 10px;
+		outline-style: solid;
+			outline-color: red;
+			outline-width: thin;
+}
+
+
 
 #nav-title{
 	font-size: 25px;
 	}
-.row{
+/* .row{
 	background-color: grey;
 	
-}
+} */
 
 .fa-4x{
 	padding: 5px;
-	color:black;
+	color:white;
 	
 }
 
