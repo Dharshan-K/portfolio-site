@@ -5,19 +5,26 @@ body{
 	max-height: 100%;
 	display: block;
 }
-.padding{
-	
-	margin: 0px 0px 0px 0px;
-	
-	
-	
+.padding{	
+	margin: 0px 0px 0px 0px;	
 	margin-right: 10px;
 }
 
 #particles-js {
 	background: black;
-	height: 100vh;
+	height: 100vh;	
+	z-index: -1;
 }
+
+.simple-intro{
+	z-index: 1;
+	position: absolute;
+	margin: 150px 150px 150px 150px;
+	
+}
+
+
+
 
 
 .intro{
@@ -42,9 +49,13 @@ width: 80%;
 } */
 
 .fa-4x{
-	padding: 5px;
-	color:white;
+	padding: 5px;	
 	
+}
+
+.fa-brands{
+	color: white;
+	padding: 10px;
 }
 
 #logo{
