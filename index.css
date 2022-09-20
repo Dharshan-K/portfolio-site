@@ -5,41 +5,43 @@ body{
 	max-height: 100%;
 	display: block;
 }
-.padding{	
-	margin: 0px 0px 0px 0px;	
-	margin-right: 10px;
-}
 
 #particles-js {
 	background: black;
 	height: 100vh;	
 	z-index: -1;
+	outline-style: solid;
+		outline-color: red;
+		outline-width: thin;
 }
 
-.simple-intro{
+.simple-intro {
 	z-index: 1;
 	position: absolute;
-	margin: 150px 150px 150px 150px;
+	margin: 140px 50px 0px 150px;
+	padding-right: 100px;
+	/* outline-style: solid;
+	outline-color: red;
+	outline-width: thin; */
+}
+
+.about {
+	/* margin-right: 300px;
+	padding-right: 200px; */
 	
+	/* outline-style: solid;
+	outline-color: red;
+	outline-width: thin; */
 }
 
-
-
-
-
-.intro{
-width: 80%;
-	height: 80%;
-	display: block;
-		margin-left: auto;
-		margin-right: 10px;
-		outline-style: solid;
-			outline-color: red;
-			outline-width: thin;
+.icon{
+	z-index:-1;
+	filter: invert(99%) sepia(1%) saturate(398%) hue-rotate(200deg) brightness(119%) contrast(100%);
+	margin-left:200px;
+	/* outline-style: solid;
+	outline-color: red;
+	outline-width: thin; */
 }
-
-
-
 #nav-title{
 	font-size: 25px;
 	}
@@ -67,9 +69,5 @@ width: 80%;
 	
 	
 }
-.vector{
-	width:400px;
-	height:400px;
-	overflow: scroll;
-}
+
 
