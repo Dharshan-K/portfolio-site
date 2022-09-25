@@ -10,9 +10,9 @@ body{
 	background: black;
 	height: 100vh;	
 	z-index: -1;
-	outline-style: solid;
+	/* outline-style: solid;
 		outline-color: red;
-		outline-width: thin;
+		outline-width: thin; */
 }
 
 .simple-intro {
@@ -45,15 +45,6 @@ body{
 #nav-title{
 	font-size: 25px;
 	}
-/* .row{
-	background-color: grey;
-	
-} */
-
-.fa-4x{
-	padding: 5px;	
-	
-}
 
 .fa-brands{
 	color: white;
@@ -66,8 +57,39 @@ body{
 	border-radius: 60px;
 	margin-right: 5px;
 	margin:10px;
-	
-	
+}
+
+.skills{
+	/* background-image: linear-gradient( white,black); */
+	background-color: rgba(0,0,0, 0.5);
+	max-height: 1400px;
+	width: auto;
+	padding: 10px 150px 0px 150px;
+}
+
+.skills-1{	
+	background-color: rgba(250,250,250,0.5);
+	display: flex;
+	flex-direction: row;
+	border-radius: 20px;
+	height: 1000px;	
+}
+
+.skills-1>div{
+	padding: 20px 25px 5px 20px;
+	background-color: rgb(0, 0, 102);
+	border-radius: 20px;
+	min-width: 150px;	
+}
+.skills-2{
+	text-align: center;
+	padding: 20px 25px 5px 20px;
+	margin: 25px 25px 25px 25px;
+	max-height: 150px;
+}
+
+.skills-2:hover{
+	box-shadow: 0px 5px 5px black;
 }
 
 
