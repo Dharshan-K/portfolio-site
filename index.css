@@ -4,6 +4,7 @@ body{
 	max-width: 100%;
 	max-height: 100%;
 	display: block;
+	
 }
 
 #particles-js {
@@ -61,23 +62,24 @@ body{
 
 .skills{
 	/* background-image: linear-gradient( white,black); */
-	background-color: rgba(0,0,0, 0.5);
-	max-height: 1400px;
+background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);	max-height: 1400px;
 	width: auto;
-	padding: 10px 150px 0px 150px;
+	padding: 10px 150px 30px 150px;
+	font-weight: bold;
 }
 
 .skills-1{	
-	background-color: rgba(250,250,250,0.5);
+	background-color: rgba(186, 194, 218, 0.722);
 	display: flex;
 	flex-direction: row;
 	border-radius: 20px;
 	height: 1000px;	
+			
 }
 
 .skills-1>div{
 	padding: 20px 25px 5px 20px;
-	background-color: rgb(0, 0, 102);
+	background-color: rgb(250,250,250);
 	border-radius: 20px;
 	min-width: 150px;	
 }
@@ -86,6 +88,10 @@ body{
 	padding: 20px 25px 5px 20px;
 	margin: 25px 25px 25px 25px;
 	max-height: 150px;
+}
+
+.fa-3x{
+	color:black;
 }
 
 .skills-2:hover{
