@@ -102,8 +102,18 @@ body{
 }
 
 .solidity{
-	height:70px;
-	width:110px;
+	height:9vh;
+	width:11vh;
 }
 
+
+.nextjs{
+	height: 9vh;
+	width: 9vh;
+}
+
+.svgs{
+	height: 9vh;
+	width: 9vh;
+}
 
