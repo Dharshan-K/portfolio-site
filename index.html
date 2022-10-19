@@ -11,7 +11,11 @@
 			crossorigin="anonymous"></script>
 		<script src="https://kit.fontawesome.com/4e965b350f.js" crossorigin="anonymous"></script>
 		<script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"></script>
 		<link href="index.css" rel="stylesheet">
+
 	</head>
 	
 	<body>
@@ -152,26 +156,26 @@
 	<div class="contact" id="contact">
 		<h1 class="text-white" style="text-align:center;margin-bottom: 20px;">Contact</h1>
 		<div class="contact-1 justify-content-center">
-			<form>
+			<form id="myform">
 				<div class="form-group">
-					<label for="exampleInputPassword1" class="text-black">Name</label>
-					<input type="name" class="form-control" id="exampleInputPassword1" placeholder="Name">
+					<label for="name" class="text-black">Name</label>
+					<input type="name" class="form-control" id="name" placeholder="Name">
 				</div>				
 				<div class="form-group">
-					<label for="exampleInputEmail1" class="text-black">Email address</label>
-					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+					<label for="email" class="text-black">Email address</label>
+					<input type="email" class="form-control" id="email" aria-describedby="emailHelp"
 						placeholder="Enter email">
 					
 				</div>
 				<div class="form-group">
-					<label for="exampleInputPassword1" class="text-black">Phone</label>
-					<input type="Phone" class="form-control" id="exampleInputPassword1" placeholder="Phone">
+					<label for="phone" class="text-black">Phone</label>
+					<input type="Phone" class="form-control" id="phone" placeholder="Phone">
 				</div>
 				<div class="form-group">
-					<label for="exampleInputPassword1" class="text-black">Message</label>
-					<textarea type="text" class="form-control" id="exampleInputPassword1" placeholder="Message" rows="5" cols="20"></textarea>
+					<label for="message" class="text-black">Message</label>
+					<textarea type="text" class="form-control" id="message" placeholder="Message" rows="5" cols="20"></textarea>
 					<br>
-					<button type="submit" class="btn btn-dark">Submit</button>
+					<button onclick="sendmail()" type="submit" class="btn btn-dark">Submit</button>
 				</div>
 				
 			</form>
@@ -180,45 +184,79 @@
 
 	<!----------------------------------Contact section ends-------------------------------------------->
 
-	<!-- <img src="./assets/DrawKit - People Working Illustration Pack/SVG/character 1.svg" />
-	<img src="./assets/DrawKit - People Working Illustration Pack/SVG/character 2.svg" />	
-	<img src="./assets/DrawKit - People Working Illustration Pack/SVG/character 3.svg" />
-	<img src="./assets/DrawKit - People Working Illustration Pack/SVG/character 4.svg" />	
-	<img src="./assets/DrawKit - People Working Illustration Pack/SVG/character 5.svg" />	
-	<img src="./assets/DrawKit - People Working Illustration Pack/SVG/character 6.svg" />	
-	<img src="./assets/DrawKit - People Working Illustration Pack/SVG/character 7.svg" />
-	<img src="./assets/DrawKit - People Working Illustration Pack/SVG/character 8.svg" />
-	<img src="./assets/DrawKit - People Working Illustration Pack/SVG/character 9.svg" />
-	<img src="./assets/DrawKit - People Working Illustration Pack/SVG/character 10.svg" />
-	<img src="./assets/DrawKit - People Working Illustration Pack/SVG/character 11.svg" />
-	<img src="./assets/DrawKit - People Working Illustration Pack/SVG/character 12.svg" />
-	<img src="./assets/DrawKit - People Working Illustration Pack/SVG/character 13.svg" />
-	<img src="./assets/DrawKit - People Working Illustration Pack/SVG/character 14.svg" />
-	<img src="./assets/DrawKit - People Working Illustration Pack/SVG/character 15.svg" />
-	<img src="./assets/DrawKit - People Working Illustration Pack/SVG/character 16.svg" />
-	<img src="./assets/DrawKit - People Working Illustration Pack/SVG/character 17.svg" />
-	<img src="./assets/DrawKit - People Working Illustration Pack/SVG/character 18svg" />
-	<img src="./assets/DrawKit - People Working Illustration Pack/SVG/character 19.svg" />
-	<img src="./assets/DrawKit - People Working Illustration Pack/SVG/character 20.svg" />
-	<img src="./assets/DrawKit - People Working Illustration Pack/SVG/character 21.svg" />
-	<img src="./assets/DrawKit - People Working Illustration Pack/SVG/character 22.svg" />
-	<img src="./assets/DrawKit - People Working Illustration Pack/SVG/character 23.svg" />
-	<img src="./assets/DrawKit - People Working Illustration Pack/SVG/character 24.svg" /> -->
-	
-
-
-
-	
-
-		
-		
-
 	
 		<!-- <-----------------------------particle js----------------------------------> 
 
 	<script src="assets/particles.js-master/particles.js"></script>
 	<script src="assets/particles.js-master/demo/js/app.js"></script>
 	<script src="assets/particles.js-master/particles.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+	</script>
+	<script type="text/javascript">
+		(function () {
+			emailjs.init("Qq8ebXLHZk255STCa");
+		})();
+	</script>
+	<script>
+		function sendmail() {
+			let name = document.getElementById("name").value;
+			let email = document.getElementById("email").value;
+			let phone = document.getElementById("phone").value;
+			let message = document.getElementById("message").value;
+			console.log(name)
+
+			var formdata = {
+				from_name: name,
+				from_email: email,
+				from_phone: phone,
+				from_message: message
+			};
+			emailjs.send('service_7bdsvdf', 'template_4f8eh2j', formdata).then(function (response) {
+				console.log('SUCCESS!', response.status, response.text);
+			}, function (error) {
+				console.log('FAILED...', error);
+			});;
+		}
+	</script>
+	<!-- <script>
+		emailjs.sendForm('service_7bdsvdf', 'template_4f8eh2j', '#myform')
+			.then(function (response) {
+				console.log('SUCCESS!', response.status, response.text);
+			}, function (error) {
+				console.log('FAILED...', error);
+			});
+	</script> -->
+	<!-- <script>
+		emailjs.sendForm('service_7bdsvdf', 'template_4f8eh2j', '#myForm')
+				.then(function (response) {
+					console.log('SUCCESS!', response.status, response.text);
+				}, function (error) {
+					console.log('FAILED...', error);
+				});
+	</script> -->
+	<!-- <script>
+		// listen to the form submission
+		document
+			.getElementById("myform")
+			.addEventListener("submit", function (event) {
+				event.preventDefault();
+
+				
+
+				// send the email here
+				emailjs.sendForm("service_7bdsvdf", "template_4f8eh2j", this).then(
+					(response) => {
+						console.log("SUCCESS!", response.status, response.text);
+						alert("SUCCESS!");
+					},
+					(error) => {
+						console.log("FAILED...", error);
+						alert("FAILED...", error);
+					}
+				);
+			});
+	</script> -->
+	
 
 	</body>
 	</html>

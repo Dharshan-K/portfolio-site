@@ -1,19 +1,13 @@
 body{
-	/* background-image: url("./assets/backgroundImg.jpg");
-	background-repeat: no-repeat; */
 	max-width: 100%;
 	max-height: 100%;
 	display: block;
-	
 }
 
 #particles-js {
 	background: black;
 	height: 100vh;	
 	z-index: -1;
-	/* outline-style: solid;
-		outline-color: red;
-		outline-width: thin; */
 }
 
 .simple-intro {
@@ -21,27 +15,13 @@ body{
 	position: absolute;
 	margin: 140px 50px 0px 150px;
 	padding-right: 100px;
-	/* outline-style: solid;
-	outline-color: red;
-	outline-width: thin; */
-}
-
-.about {
-	/* margin-right: 300px;
-	padding-right: 200px; */
-	
-	/* outline-style: solid;
-	outline-color: red;
-	outline-width: thin; */
 }
 
 .icon{
 	z-index:-1;
 	filter: invert(99%) sepia(1%) saturate(398%) hue-rotate(200deg) brightness(119%) contrast(100%);
 	margin-left:200px;
-	/* outline-style: solid;
-	outline-color: red;
-	outline-width: thin; */
+
 }
 #nav-title{
 	font-size: 25px;
