@@ -55,8 +55,9 @@ body{
 	flex-wrap: wrap;	
 	align-items: flex-start;
 	border-radius: 20px;
-	max-height: 100vh;	
-	margin-bottom: 60px;		
+	max-height: 1000vh;	
+	margin-bottom: 60px;
+	min-width: 40vh;		
 }
 
 .skills-1>div{
@@ -122,11 +123,12 @@ body{
 	padding-bottom: 5vh;
 }
 
-.contact-1{
-	margin: 5vh 30vh 30vh 30vh; 
-	background-color: rgba(250,250,250,0.75);
-	padding: 10vh 40vh 10vh 40vh;
+.contact-2{
+	margin: 5vh 30vh 30vh 20vh;
+	background-color: rgba(250, 250, 250, 0.75);
+	padding: 10vh 20vh 10vh 30vh;
 	border-radius: 20px;
+	max-width: 100rem;		
 }
 
 .contact-1>form>div{
