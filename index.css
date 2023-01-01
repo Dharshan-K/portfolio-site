@@ -38,7 +38,7 @@ body{
 	margin: 120px 10px 0px 50px;
 	display: grid;
 	grid-template-columns: auto auto;
-	column-gap: 10vh	;
+	column-gap: 10vh;
 
 }
 
@@ -164,10 +164,26 @@ body{
 		display: none;
 	}
 
+	.about{
+		max-width: 380px;
+		padding-left: 0px;
+	}
+
+	.name{
+		margin:0px;
+		padding: 0px;
+	}
+
+	.about>p{
+		font-size: 3vh;
+		max-width:380px;
+	}
+
 	.simple-intro{
 		margin: 2vh;
 		text-align: center;
 		padding-right: 5px;
+		column-gap:0vh;
 
 	}
 
