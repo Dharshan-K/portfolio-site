@@ -42,38 +42,32 @@ body{
 
 .skills{
 	background-image: linear-gradient( black,white);
-/* background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);	max-height: 1400px; */
 	width: auto;
 	padding: 10px 150px 30px 150px;
-	font-weight: bold;
-	
+	font-weight: bold;	
 }
 
 .skills-1{	
 	background-color: rgb(246, 246, 248);
 	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	/*column-gap: 50px;
-	row-gap: 50px;*/	
+	grid-template-columns: repeat(5, 1fr);
 	border-radius: 20px;
 	min-width: 40vh;		
 }
 
-.skills-1>div{
-	padding: 20px 25px 5px 20px;
-	background-color: rgb(250,250,250);
+.skills-container{
 	border-radius: 20px;
-	min-width: 150px;
-	
 }
 .skills-2{
-	text-align: center;
-	/* padding: 20px px 5px 0px; */
-	margin: 25px 25px 25px 25px;
+	margin: 25px;
 	max-height: 150px;
 	display:flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 25px;
+	background-color: rgb(250,250,250);
+	border-radius: 20px;
+	min-width: 150px;
 }
 
 .fa-3x{
@@ -139,9 +133,25 @@ body{
 /*<----------------------media queries---------------------->*/
 
 @media only screen and (max-width:480px){
-	.skills-2{
-		display: flex;
-		flex-direction: row;
-		
+	.icon{
+		display: none;
 	}
+
+	.skills-1{
+		display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	min-width: 20vh;
+
+
+	}
+
+	.skills{
+		padding: 5px;
+	}
+
+	.skills-2{
+		padding : 5px;
+		margin: 10px;
+	}
+
 }
