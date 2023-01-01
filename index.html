@@ -14,6 +14,9 @@
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
 			crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+		<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Courgette&family=VT323&family=Monoton">
 		<link href="index.css" rel="stylesheet">
 
 	</head>
@@ -42,16 +45,17 @@
 	
 		<!-- <-----------------------------Introduction----------------------------------> 
 		<div id="particles-js">
-			<div class="simple-intro text-white fs-1 row">
-				<div class="col about">
-					<p>Hi, I am Dharshan K</p>
-					<p>I am a Blockchain Developer</p>
+			<div class="simple-intro text-white fs-1">
+				<div class="about">
+					<p class="name">Hi, I am Dharshan K</p>
+					<p>I am into <span class="job"></span></p>
 					<p>About me</p>
 					<a href="https://twitter.com/kd_prog"><i class="fa-brands fa-twitter fa-1x"></i></a>
 					<a href="https://www.linkedin.com/in/dharshan-k-3a7b70217/"><i class="fa-brands fa-linkedin fa-1x"></i></a>
 					<a href="https://github.com/Dharshan-K"><i class="fa-brands fa-github fa-1x"></i></a>
+					<a href="https://dharshank.hashnode.dev/"><i class="fa-brands fa-hashnode fa-1x"></i></a>
 				</div>
-				<div class="col">
+				<div class="chain-icon">
 					<img class="icon" src="./assets/blockchain-icon.png" />
 				</div>
 			</div>
@@ -219,6 +223,11 @@
 		})();
 	</script>
 	<script>
+		var options = {
+			strings: ['Solidity Developer', 'Ethereum development', 'Smart contracts', 'De-Fi', 'DAO', 'Open Source'],
+			typeSpeed: 40
+		};
+		var typed = new Typed('.job', options); 
 		function sendmail() {
 			event.preventdefault();
 			let name = document.getElementById("name").value;
@@ -241,46 +250,6 @@
 			});;
 		}
 	</script>
-	<!-- <script>
-		emailjs.sendForm('service_7bdsvdf', 'template_4f8eh2j', '#myform')
-			.then(function (response) {
-				console.log('SUCCESS!', response.status, response.text);
-			}, function (error) {
-				console.log('FAILED...', error);
-			});
-	</script> -->
-	<!-- <script>
-		emailjs.sendForm('service_7bdsvdf', 'template_4f8eh2j', '#myForm')
-				.then(function (response) {
-					console.log('SUCCESS!', response.status, response.text);
-				}, function (error) {
-					console.log('FAILED...', error);
-				});
-	</script> -->
-	<!-- <script>
-		// listen to the form submission
-		document
-			.getElementById("myform")
-			.addEventListener("submit", function (event) {
-				event.preventDefault();
-
-				
-
-				// send the email here
-				emailjs.sendForm("service_7bdsvdf", "template_4f8eh2j", this).then(
-					(response) => {
-						console.log("SUCCESS!", response.status, response.text);
-						alert("SUCCESS!");
-					},
-					(error) => {
-						console.log("FAILED...", error);
-						alert("FAILED...", error);
-					}
-				);
-			});
-	</script> -->
-	
-
 	</body>
 	</html>
 
