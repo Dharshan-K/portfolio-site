@@ -230,8 +230,10 @@
 			typeSpeed: 40
 		};
 		var typed = new Typed('.job', options); 
+
 		function sendmail() {
-			event.preventdefault();
+			event.preventDefault();
+			console.log("email in queue.......")
 			let name = document.getElementById("name").value;
 			let email = document.getElementById("email").value;
 			let phone = document.getElementById("phone").value;
@@ -241,7 +243,7 @@
 
 			var formdata = {
 				from_name: name,
-				from_email: email,
+				reply_to: email,
 				from_phone: phone,
 				from_message: message
 			};
